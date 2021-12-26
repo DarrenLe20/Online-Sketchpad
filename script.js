@@ -96,7 +96,8 @@ function resetAll() {
 
 function newBoard() {
     btnNew.addEventListener('click', () => {
-        let choice = prompt("Enter the size of the new pad (enter a number): ");
+        let choice = prompt("Enter the size of the new pad (enter a number): " +
+        '\nWarning: Going above 64 may cause performance issues');
         if (choice === null || choice < 1){
             resetAll();
             createGrid(16, 16);

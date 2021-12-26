@@ -1,5 +1,5 @@
 .pixel {
-    border: 1px solid black;
+    border: 0.5px solid black;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 50px;
 }
 .header {
     display: flex;
@@ -48,9 +48,25 @@ body {
 }
 
 button {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-weight: bold;
     width: 120px;
-    border-radius: 25px;
-    
+    border-radius: 15px;
+    border-color: black;
+}
+
+/* Basic button animations */
+button:hover {
+    background-color: #A92E3E;
+    color: white;
+}
+
+button:active {
+    transform: translateY(2px);
 }
