@@ -102,6 +102,7 @@ function newBoard() {
             createGrid(16, 16);
             paintBlack();
             paintRGB();
+            erase();
             clearAll();
             newBoard();
         } else {
@@ -109,6 +110,7 @@ function newBoard() {
             createGrid(choice, choice);
             paintBlack();
             paintRGB();
+            erase();
             clearAll();
             newBoard();
         }
